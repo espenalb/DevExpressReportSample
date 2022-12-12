@@ -13,5 +13,10 @@ namespace DevExpressReportSample
     /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            InitializeComponent();
+            MyServiceProvider.Init(this);
+        }
     }
 }
